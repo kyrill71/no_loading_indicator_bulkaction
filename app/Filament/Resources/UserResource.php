@@ -32,8 +32,8 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')->label('Naam')->sortable()->searchable(),
-                Tables\Columns\TextColumn::make('email')->sortable(),
+                Tables\Columns\TextColumn::make('name'),
+                Tables\Columns\TextColumn::make('email'),
             ])
             ->filters([
                 //
